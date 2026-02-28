@@ -1,0 +1,11 @@
+name : v0-application
+services : 
+  db:
+    image: postgres:latest
+    environment: 
+      - POSTGRESS_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_DB=postgres
+    ports:
+      - 5431:5432
+    
